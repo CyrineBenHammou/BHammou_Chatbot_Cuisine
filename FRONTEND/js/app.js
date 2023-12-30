@@ -26,7 +26,7 @@ var BTN = document.querySelector("#bText");
     chatHistory += text + '\n';
     CHAT_AREA.innerHTML += `<div class="chat-bubble sender right">${text}</div><div class="clearfix"></div>`;
 
-    var url_backend = "http://127.0.0.1:8000/cuisine"
+    var url_backend = "http://127.0.0.1:8000/recette"
 
     fetch(url_backend, {
       method: "POST",
